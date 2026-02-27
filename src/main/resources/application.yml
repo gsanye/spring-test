@@ -1,0 +1,12 @@
+logging:
+  level:
+    com.san.yes: DEBUG        # 指定包的日志级别
+    org.springframework: TRACE # Spring 框架日志设为 WARN
+    root: INFO                # 全局根日志级别
+  pattern:
+    console: "%d{yyyy-MM-dd HH:mm:ss} [%thread] %-5level %logger{36} - %msg%n"
+    file: "%d{yyyy-MM-dd HH:mm:ss} [%thread] %-5level %logger{36} - %msg%n"
+  file:
+    name: logs/app.log          # 日志文件路径
+    max-size: 10MB             # 单个日志文件最大大小（Spring Boot 2.2+）
+    max-history: 30            # 保留历史文件天数

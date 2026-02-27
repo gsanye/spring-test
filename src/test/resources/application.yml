@@ -1,0 +1,7 @@
+logging:
+  level:
+    com.san.yes: DEBUG        # 指定包的日志级别
+    org.springframework: TRACE # Spring 框架日志设为 WARN
+    root: INFO                # 全局根日志级别
+  pattern:
+    console: "%d{yyyy-MM-dd HH:mm:ss} [%thread] %-5level %logger{36} - %msg%n"
